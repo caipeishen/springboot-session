@@ -22,6 +22,11 @@ public class SessionController {
         return JSON.toJSONString(o);
     }
 
+    @GetMapping("/loginInfo2")
+    public String loginInfo(){
+        return JSON.toJSONString("loginInfo2");
+    }
+
     @GetMapping("/login")
     public String login(HttpServletRequest request){
         String name = request.getParameter("name");

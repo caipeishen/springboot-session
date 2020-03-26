@@ -7,7 +7,6 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 /**
  * @EnableRedisHttpSession 实现session共享
  */
-
 @SpringBootApplication
 @EnableRedisHttpSession(maxInactiveIntervalInSeconds=30,redisNamespace = "tl")
 public class Application_Session_Demo1
